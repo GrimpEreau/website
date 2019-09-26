@@ -46,6 +46,10 @@ const menu = [
     text: 'Support',
     path: '/support/',
   },
+  {
+    text: 'Community',
+    path: '/community',
+  },
 ];
 
 export default menu;
