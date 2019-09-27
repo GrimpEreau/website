@@ -54,10 +54,9 @@
 }
 
 .container {
-  margin: auto;
-  padding: 0 $page-padding;
+  margin: 10px;
+  padding: 10px;
   width: 100%;
-  max-width: $max-width;
   z-index: z("default");
   position: relative;
   @include mq($max-width: $vw-small) {

@@ -6,6 +6,8 @@ import CommunityCommercial from '../images/community_commercial.svg';
 import Community from '../images/community.svg';
 import CommunityWrench from '../images/community_wrench.svg';
 import CommunitySettings from '../images/community_settings.svg';
+import CommunitySecurity from '../images/community_security.svg';
+import CommunityTraining from '../images/community_training.svg';
 
 const CommunityCard = ({ children, image, title }) => (
   <div className="community-card">
@@ -38,36 +40,6 @@ const CommunityPage = props => (
           There are many ways to get involved and help us.
         </h1>
         <div className="community__cards">
-          <CommunityCard image={CommunityWrench} title="Contribute to the framework">
-            <p>
-              <strong>Improving the documentation</strong> is an excellent way to start getting involved with API
-              Platform.
-            </p>
-            <br />
-            <p>
-              You can also{' '}
-              <a href="https://github.com/api-platform/api-platform/issues" target="_blank" rel="noopener noreferrer">
-                report issues
-              </a>
-              , help fix bugs or implement new features via <strong>creating a Pull Request</strong>.
-            </p>
-          </CommunityCard>
-          <CommunityCard title="Commercial support" image={CommunityCommercial}>
-            <p>
-              <a href="https://les-tilleuls.coop/en" target="_blank" rel="noopener noreferrer">
-                Les-Tilleuls.coop
-              </a>{' '}
-              provides professional services for API Platform and Symfony including training, development and API
-              design.
-            </p>
-            <br />
-            <p>
-              <a href="https://les-tilleuls.coop/en/contact" target="_blank" rel="noopener noreferrer">
-                Contact us
-              </a>{' '}
-              for more information.
-            </p>
-          </CommunityCard>
           <CommunityCard title="Community support" image={Community}>
             <p>
               Ask questions about API Platform on{' '}
@@ -89,6 +61,36 @@ const CommunityPage = props => (
               .
             </p>
           </CommunityCard>
+          <CommunityCard title="Commercial support" image={CommunityCommercial}>
+            <p>
+              <a href="https://les-tilleuls.coop/en" target="_blank" rel="noopener noreferrer">
+                Les-Tilleuls.coop
+              </a>{' '}
+              provides professional services for API Platform and Symfony including training, development and API
+              design.
+            </p>
+            <br />
+            <p>
+              <a href="https://les-tilleuls.coop/en/contact" target="_blank" rel="noopener noreferrer">
+                Contact us
+              </a>{' '}
+              for more information.
+            </p>
+          </CommunityCard>
+          <CommunityCard image={CommunityWrench} title="Contribute to the framework">
+            <p>
+              <strong>Improving the documentation</strong> is an excellent way to start getting involved with API
+              Platform.
+            </p>
+            <br />
+            <p>
+              You can also{' '}
+              <a href="https://github.com/api-platform/api-platform/issues" target="_blank" rel="noopener noreferrer">
+                report issues
+              </a>
+              , help fix bugs or implement new features via <strong>creating a Pull Request</strong>.
+            </p>
+          </CommunityCard>
           <CommunityCard image={CommunitySettings} title="Help your local community">
             <p>Help us by connecting with your local community. Here is a few actions you can undertake :</p>
             <br />
@@ -102,6 +104,33 @@ const CommunityPage = props => (
                 organise a meetup
               </a>{' '}
               (discover the upcoming conferences).
+            </p>
+          </CommunityCard>
+          <CommunityCard image={CommunitySecurity} title="Security issues">
+            <p>
+              If you think you have found a security issue,{' '}
+              <a href="https://les-tilleuls.coop/en/contact" target="_blank" rel="noopener noreferrer">
+                contact us.
+              </a>{' '}
+              <br />
+              Please do not report security problems publicly.
+            </p>{' '}
+            <br />
+            <p>
+              We will disclose details of the issue and credit you after having released a new version including a fix.
+            </p>
+          </CommunityCard>
+          <CommunityCard image={CommunityTraining} title="Training">
+            <p>
+              You can be trained by <strong>API Platform core team</strong> (2 day sessions in French or English).
+            </p>{' '}
+            <br />
+            <p>
+              Les-Tilleuls.coop can also organize tailored training courses:{' '}
+              <a href="https://les-tilleuls.coop/en/contact" target="_blank" rel="noopener noreferrer">
+                contact us
+              </a>{' '}
+              for more informations.
             </p>
           </CommunityCard>
         </div>

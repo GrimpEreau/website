@@ -39,12 +39,12 @@ const menu = [
     path: 'https://demo-client.api-platform.com/',
   },
   {
-    text: 'News',
-    path: '/news/',
+    text: 'Social',
+    path: '/social/',
   },
   {
     text: 'Community',
-    path: '/community',
+    path: '/community/',
   },
 ];
 
