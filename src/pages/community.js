@@ -2,8 +2,10 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
-import SupportCommercial from '../images/support_commercial.svg';
-import SupportCommunity from '../images/support_community.svg';
+import CommunityCommercial from '../images/community_commercial.svg';
+import Community from '../images/community.svg';
+import CommunityWrench from '../images/community_wrench.svg';
+import CommunitySettings from '../images/community_settings.svg';
 
 const CommunityCard = ({ children, image, title }) => (
   <div className="community-card">
@@ -29,11 +31,14 @@ const CommunityPage = props => (
       <Helmet title="Community" />
       <section className="container">
         <h1>
-          If you're interested in contributing to API Platform and supporting our community then you're in the good
-          place! There are many ways to get involved and help us.
+          Interested in <strong>contributing to API Platform</strong> and supporting <strong>our community</strong>?
+          <br />
+          Then you're in the good place!
+          <br />
+          There are many ways to get involved and help us.
         </h1>
         <div className="community__cards">
-          <CommunityCard image={SupportCommercial} title="Contribute to the framework">
+          <CommunityCard image={CommunityWrench} title="Contribute to the framework">
             <p>
               <strong>Improving the documentation</strong> is an excellent way to start getting involved with API
               Platform.
@@ -47,7 +52,7 @@ const CommunityPage = props => (
               , help fix bugs or implement new features via <strong>creating a Pull Request</strong>.
             </p>
           </CommunityCard>
-          <CommunityCard title="Commercial support" image={SupportCommercial}>
+          <CommunityCard title="Commercial support" image={CommunityCommercial}>
             <p>
               <a href="https://les-tilleuls.coop/en" target="_blank" rel="noopener noreferrer">
                 Les-Tilleuls.coop
@@ -63,7 +68,7 @@ const CommunityPage = props => (
               for more information.
             </p>
           </CommunityCard>
-          <CommunityCard title="Community support" image={SupportCommunity}>
+          <CommunityCard title="Community support" image={Community}>
             <p>
               Ask questions about API Platform on{' '}
               <a
@@ -84,7 +89,7 @@ const CommunityPage = props => (
               .
             </p>
           </CommunityCard>
-          <CommunityCard image={SupportCommercial} title="Help your local community">
+          <CommunityCard image={CommunitySettings} title="Help your local community">
             <p>Help us by connecting with your local community. Here is a few actions you can undertake :</p>
             <br />
             <p>
@@ -92,7 +97,11 @@ const CommunityPage = props => (
               <a href="https://twitter.com/search?q=apiplatform&src=typd" target="_blank" rel="noopener noreferrer">
                 social media
               </a>{' '}
-              or organise a meetup (discover the upcoming conferences).
+              or{' '}
+              <a href="https://www.meetup.com/fr-FR/meetup-group-RzDLfqfs/" target="_blank" rel="noopener noreferrer">
+                organise a meetup
+              </a>{' '}
+              (discover the upcoming conferences).
             </p>
           </CommunityCard>
         </div>

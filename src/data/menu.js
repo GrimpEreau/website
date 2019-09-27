@@ -43,10 +43,6 @@ const menu = [
     path: '/news/',
   },
   {
-    text: 'Support',
-    path: '/support/',
-  },
-  {
     text: 'Community',
     path: '/community',
   },
